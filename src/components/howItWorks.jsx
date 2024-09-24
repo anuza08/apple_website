@@ -42,20 +42,21 @@ const HowItWorks = () => {
 
         <div className="mt-10 md:mt-20 mb-14">
           <div className="relative h-full flex justify-center items-center">
-            <div className="relative">
+            <div className="relative w-full">
               <img
                 src={frameImg}
                 alt="frame"
                 className="bg-transparent relative z-10 w-full"
               />
               <video
-                className="absolute top-4 left-4  h-82 object-cover pointer-events-none rounded-3xl"
+                className="absolute top-0 left-0 md:top-4 md:left-4  md:h-82 object-cover pointer-events-none rounded-3xl"
                 playsInline
                 preload="none"
                 muted
                 autoPlay
                 ref={videoRef}
                 width={680}
+                height={100}
               >
                 <source src={frameVideo} type="video/mp4" />
               </video>
